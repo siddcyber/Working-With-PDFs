@@ -31,7 +31,7 @@ def convert_merge(file_type_list, file_List):
     elif file_type_list == "Word":
         pass
 
-
+# List of files to convert and list of type of file
 for file in os.listdir(src_folder):
     if file.endswith('.pdf'):
         file_List.append(os.path.join(src_folder, file))
@@ -43,6 +43,6 @@ for file in os.listdir(src_folder):
         file_List.append(os.path.join(src_folder, file))
         file_type_list.append('Word')
 
-print(file_type_list)
+print(file_type_list, file_List)
 # convert_merge(file_type_list, file_List)
 
